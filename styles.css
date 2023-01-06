@@ -32,18 +32,21 @@ h3 {
 
 .btn {
   font-size: 1.5rem;
+  font-weight: 900;
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
   background-color: var(--brown-color);
   padding: 0.75rem 2em;
-  font-weight: 900;
   border-radius: 100px;
+  letter-spacing: 0.2rem;
 }
 
 .btn:hover,
-.btn:focus {
+.btn:focus,
+.nav__link--button:hover,
+.nav__link--button:focus {
   opacity: 0.75;
 }
 
@@ -235,6 +238,7 @@ footer p {
 @media (min-width: 700px) {
   .sidebar {
     display: flex;
+    gap: 2rem;
   }
 }
 /*for large screen*/
@@ -250,6 +254,7 @@ footer p {
     visibility: visible;
     display: flex;
     justify-content: flex-end;
+    gap: 2rem;
     margin: 0;
     position: relative;
   }
@@ -262,18 +267,26 @@ footer p {
   .hero__text {
     display: flex;
   }
+
   .hero__text--secondary {
     margin-top: 7em;
   }
   .main {
     display: flex;
+    gap: 2rem;
   }
 
   .sidebar {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
-  .footer__col {
-    width: 50%;
+  .footer-list {
+    margin-top: 0;
+  }
+
+  .footer {
+    gap: 2rem;
+    flex-grow: 1;
   }
 }

@@ -84,6 +84,8 @@ header {
   transition: opacity 250ms ease;
   position: absolute;
   left: 0;
+  top: 0;
+  transform: translateY(-15%);
 }
 
 .nav-toggle:focus,
@@ -234,10 +236,6 @@ footer p {
   .sidebar {
     display: flex;
   }
-
-  .sidebar__info + .sidebar__info {
-    margin-left: 20px;
-  }
 }
 /*for large screen*/
 @media (min-width: 1000px) {
@@ -259,6 +257,7 @@ footer p {
   .nav__list {
     display: flex;
     margin: 0;
+    gap: 15px;
   }
   .hero__text {
     display: flex;

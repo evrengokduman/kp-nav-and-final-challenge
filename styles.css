@@ -26,13 +26,12 @@ h3 {
   font-family: "Oswald", sans-serif;
 }
 
-.hero-title {
-  font-size: 5rem;
-  margin-top: 0;
-  line-height: 5rem;
+.golden-text {
+  color: var(--brown-color);
 }
 
 .btn {
+  font-size: 1.5rem;
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
@@ -62,6 +61,7 @@ header {
   background-color: var(--black-color);
   padding: 1em 0;
   text-align: center;
+  font-size: 1.125em;
 }
 
 .nav {
@@ -162,16 +162,119 @@ header {
 }
 .hero-title {
   color: #ffff;
+  font-size: 5rem;
+  margin-top: 0;
+  line-height: 6rem;
+}
+
+.primary-content--image {
+  width: 100%;
+  padding: 2.5em 0;
 }
 
 .hero p {
-  margin-top: 3em;
   margin-bottom: 3em;
+  font-size: 1.5rem;
 }
-.hero img {
+.hero__img {
   margin-top: 2em;
 }
 
-.golden-text {
+.main {
+  margin-top: 3em;
+}
+
+.section-two {
+  background-color: #f1f1f1;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+.sidebar {
+  text-align: center;
+  color: #fff;
+}
+.sidebar__info {
+  background-color: var(--black-color);
+  margin: 1em 0;
+  padding: 1em 2em;
+}
+
+footer {
+  background-color: var(--dark-grey-color);
+  padding: 3em;
+}
+
+.footer-title {
+  text-align: center;
+  color: white;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-list__title {
   color: var(--brown-color);
+}
+
+.footer__link,
+footer p {
+  color: var(--grey-color);
+}
+.footer__link:hover,
+.footer__item:focus {
+  opacity: 0.75;
+}
+.footer__text {
+  text-decoration: none;
+}
+/*for medium screen*/
+@media (min-width: 700px) {
+  .sidebar {
+    display: flex;
+  }
+
+  .sidebar__info + .sidebar__info {
+    margin-left: 20px;
+  }
+}
+/*for large screen*/
+@media (min-width: 1000px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .row {
+    display: flex;
+  }
+  .nav {
+    visibility: visible;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    position: relative;
+  }
+
+  .nav__list {
+    display: flex;
+    margin: 0;
+  }
+  .hero__text {
+    display: flex;
+  }
+  .hero__text--secondary {
+    margin-top: 7em;
+  }
+  .main {
+    display: flex;
+  }
+
+  .sidebar {
+    display: block;
+  }
+
+  .footer__col {
+    width: 50%;
+  }
 }

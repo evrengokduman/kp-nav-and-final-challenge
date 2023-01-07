@@ -207,6 +207,7 @@ header {
 footer {
   background-color: var(--dark-grey-color);
   padding: 3em;
+  margin-top: 3rem;
 }
 
 .footer-title {
